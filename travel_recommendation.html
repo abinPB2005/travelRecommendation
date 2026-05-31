@@ -1,26 +1,69 @@
+<!DOCTYPE html>
 <html>
- <head>
+<head>
     <title>Travel Recommendation</title>
-    <h1>TravelBloom</h1>
+
     <style>
         body{
-            background-image: url('travel.jpg');
-            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav{
+            background-color: #0a3d4d;
+            padding: 20px;
+        }
+
+        nav h1{
+            display: inline;
             color: white;
+            font-style: italic;
+            margin-right: 100px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        .search{
+            float: right;
+        }
+
+        input{
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        button{
+            padding: 8px 15px;
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 5px;
         }
     </style>
- </head> 
- <body>
+</head>
+
+<body>
+
     <nav>
-        <a href="home.html">HOME</a>
-        <a href="aboutUs.html">ABOUT US</a>
-        <a href="contactUs">CONTACT US</a>
+        <h1>TravelBloom</h1>
 
+        <a href="home.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+
+        <span class="search">
+            <input type="text" placeholder="Search Recommendation">
+            <button>Search</button>
+            <button type="reset">Clear</button>
+        </span>
     </nav>
-    <input type="text" placeholder ="Search Recommendation">
-    <button>Search</button>
+    <script src ="./travelRecommendation.js"></script>
 
-    <button type ="reset">Reset</button>
- </body>  
-
+</body>
 </html>
